@@ -1,56 +1,94 @@
-/* Font Family */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Header */
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-.logo {
-    float: left;
-}
-
-nav {
-    float: right;
-}
-
-nav ul {
-    list-style: none;
+/* Reset default margin and padding for all elements */
+* {
     margin: 0;
     padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover; /* Ensure image covers full width */
-}
-
-/* Global Styles */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-a {
-    color: #007bff;
+    box-sizing: border-box;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+  }
+  
+  .logo img {
+    max-height: 40px;
+  }
+  
+  .menu-toggle {
+    display: none; /* Hide the hamburger menu initially */
+    cursor: pointer;
+  }
+  
+  /* Style for the navigation bar */
+  .navbar {
+    display: flex;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;
     text-decoration: none;
-}
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Style for the content area */
+  .content {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .navbar ul {
+      display: none; /* Hide the navbar for smaller screens */
+      flex-direction: column;
+      background-color: #333;
+      width: 100%;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      z-index: 1;
+    }
+  
+    .navbar ul li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: block; /* Display the hamburger menu */
+    }
+  
+    .hamburger {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+    }
+  }
+  
