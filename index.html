@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hamburger Menu with Parallax Scroll</title>
+  <title>Hamburger Menu with Image Slideshow</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="header">
   <div class="logo">
-    <img src="your-logo.png" alt="Logo">
+    <img src="isolatedArtboard 1white.png" alt="Logo">
   </div>
   <div class="menu-toggle">
     <div class="hamburger"></div>
@@ -28,16 +28,18 @@
 <main>
   <section class="content">
     <h1>Welcome to our Website</h1>
-    <p>This is a basic example of a website with a hamburger menu for navigation and a parallax image reel that changes as you scroll.</p>
+    <p>This is a basic example of a website with a hamburger menu for navigation and an image slideshow with arrows.</p>
   </section>
 
-  <section class="parallax-container">
-    <div class="parallax">
-      <div class="image" style="background-image: url('5a54d667a26c688752184cdcc7632925.jpg');"></div>
-      <div class="image" style="background-image: url('cdbcf077b62246123f74fcc919587b0b.jpg');"></div>
-      <div class="image" style="background-image: url('F_kRuZ2WEAAZmWG.jpg');"></div>
-      <!-- Add more image divs as needed -->
+  <section class="slideshow">
+    <div class="slides">
+      <div class="slide fade" style="background-image: url('https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+      <div class="slide fade" style="background-image: url('https://images.unsplash.com/photo-1488372759477-a7f4aa078cb6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+      <div class="slide fade" style="background-image: url('https://plus.unsplash.com/premium_photo-1680553492268-516537c44d91?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+      <!-- Add more slide divs with images as needed -->
     </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </section>
 </main>
 
